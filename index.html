@@ -1,170 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>Your Name | Cybersecurity Portfolio</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #0a0a0a;
-            color: #d4d4d4;
-        }
-
-        header {
-            padding: 4rem 2rem;
-            text-align: center;
-            background: #0f0f0f;
-            border-bottom: 2px solid #00ff88;
-        }
-
-        h1 {
-            font-size: 3rem;
-            color: #00ff88;
-            margin-bottom: 0.5rem;
-        }
-
-        nav a {
-            color: #00ff88;
-            margin: 0 1rem;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-
-        section {
-            padding: 3rem 2rem;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #00ff88;
-            margin-bottom: 0.5rem;
-        }
-
-        .project-card {
-            border: 1px solid #00ff88;
-            padding: 1rem;
-            margin-top: 1.5rem;
-            border-radius: 8px;
-            background: #141414;
-        }
-
-        .project-card h3 {
-            margin: 0;
-            color: #00ff88;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background: #00ff88;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
-            border-radius: 6px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #888;
-            border-top: 1px solid #00ff88;
-            margin-top: 4rem;
-        }
-
-        ul li {
-            margin: 0.3rem 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Your Name</h1>
-        <p>Cybersecurity Student • Penetration Tester • CTF Competitor</p>
+<header>
+    <h1>Your Name</h1>
+    <p>Cybersecurity • Penetration Testing • CTF Research</p>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="writeups.html">Write-Ups</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-        <nav>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#writeups">Write-Ups</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a cybersecurity student and penetration tester specializing in web security,
+        vulnerability analysis, and CTF competitions. This portfolio highlights my work,
+        research, and projects in security engineering.
+    </p>
+</section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Penetration Testing (Web, Network, AppSec)</li>
-            <li>CTF: Web, Forensics, Reverse Engineering, Crypto</li>
-            <li>Python, Bash, PowerShell</li>
-            <li>Nmap, Wireshark, Burp Suite, Metasploit</li>
-            <li>Risk Analysis & Threat Modeling</li>
-        </ul>
-    </section>
+<section>
+    <h2>Core Skills</h2>
+    <ul>
+        <li>Penetration Testing (Web, Network, AppSec)</li>
+        <li>CTF: Forensics, Web, Reverse Engineering, Crypto</li>
+        <li>Python, Bash, PowerShell, JavaScript</li>
+        <li>Threat Modeling & Risk Analysis</li>
+        <li>Nmap, Wireshark, Burp Suite, Metasploit</li>
+    </ul>
+</section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+<section>
+    <h2>Featured Projects</h2>
 
-        <div class="project-card">
-            <h3>Automated HIPAA Risk Analysis Tool</h3>
-            <p>Python tool that evaluates healthcare device security and produces compliance-ready reports.</p>
-            <a class="btn" href="#" target="_blank">View Project</a>
-        </div>
+    <div class="card">
+        <h3>Automated HIPAA Risk Analysis Tool</h3>
+        <p>A Python engine that evaluates healthcare device security and outputs compliance reports.</p>
+        <a class="btn" href="projects.html">View Details</a>
+    </div>
 
-        <div class="project-card">
-            <h3>Pentesting Report – ArmBook</h3>
-            <p>Detailed exploitation of XSS, SQL Injection, CSRF, authentication flaws, and broken access controls.</p>
-            <a class="btn" href="#" target="_blank">Read Report</a>
-        </div>
+    <div class="card">
+        <h3>Pentesting Report – ArmBook</h3>
+        <p>Exploitation of XSS, SQLi, CSRF, broken authentication, and incomplete sanitization.</p>
+        <a class="btn" href="projects.html">View Report</a>
+    </div>
 
-        <div class="project-card">
-            <h3>Roblox Security Engineering</h3>
-            <p>Designed secure server-client communication and mitigations against common exploit vectors.</p>
-            <a class="btn" href="#" target="_blank">View Code</a>
-        </div>
-    </section>
+</section>
 
-    <section id="writeups">
-        <h2>Write-Ups</h2>
-
-        <div class="project-card">
-            <h3>NCL Competition</h3>
-            <p>OSINT, Forensics, and Cryptography challenge breakdowns.</p>
-            <a class="btn" href="#" target="_blank">Read Write-Up</a>
-        </div>
-
-        <div class="project-card">
-            <h3>PicoCTF</h3>
-            <p>Web exploitation and binary analysis challenge solutions with explanations.</p>
-            <a class="btn" href="#" target="_blank">Read Write-Up</a>
-        </div>
-
-        <div class="project-card">
-            <h3>US Cyber Challenge</h3>
-            <p>Reversing, exploit development, and workshop training notes.</p>
-            <a class="btn" href="#" target="_blank">Read Write-Up</a>
-        </div>
-
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            Email: <a class="btn" href="mailto:youremail@example.com">Send Email</a><br><br>
-            GitHub: <a class="btn" href="https://github.com/yourusername" target="_blank">GitHub Profile</a><br><br>
-            LinkedIn: <a class="btn" href="#" target="_blank">LinkedIn</a>
-        </p>
-    </section>
-
-    <footer>
-        © 2025 Your Name — Cybersecurity Portfolio
-    </footer>
+<footer>
+    © 2025 Your Name — Cybersecurity Portfolio
+</footer>
 
 </body>
 </html>
