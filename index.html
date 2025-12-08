@@ -1,64 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Your Name | Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Home — Cybersecurity Portfolio</title>
+<link rel="stylesheet" href="style.css">
 
+</head>
 <body>
 
-<header>
-    <h1>Your Name</h1>
-    <p>Cybersecurity • Penetration Testing • CTF Research</p>
-    <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="writeups.html">Write-Ups</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a cybersecurity student and penetration tester specializing in web security,
-        vulnerability analysis, and CTF competitions. This portfolio highlights my work,
-        research, and projects in security engineering.
-    </p>
-</section>
-
-<section>
-    <h2>Core Skills</h2>
-    <ul>
-        <li>Penetration Testing (Web, Network, AppSec)</li>
-        <li>CTF: Forensics, Web, Reverse Engineering, Crypto</li>
-        <li>Python, Bash, PowerShell, JavaScript</li>
-        <li>Threat Modeling & Risk Analysis</li>
-        <li>Nmap, Wireshark, Burp Suite, Metasploit</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Featured Projects</h2>
-
-    <div class="card">
-        <h3>Automated HIPAA Risk Analysis Tool</h3>
-        <p>A Python engine that evaluates healthcare device security and outputs compliance reports.</p>
-        <a class="btn" href="projects.html">View Details</a>
+<!-- NAV -->
+<nav role="navigation" aria-label="Main">
+  <div class="nav-inner">
+    <div class="nav-links" role="menubar" aria-label="Top Navigation">
+      <a href="index.html" class="active" role="menuitem">Home</a>
+      <a href="projects.html" role="menuitem">Projects</a>
+      <a href="blog.html" role="menuitem">Blog</a>
+      <a href="#footer" role="menuitem">Contact</a>
     </div>
+  </div>
+</nav>
 
-    <div class="card">
-        <h3>Pentesting Report – ArmBook</h3>
-        <p>Exploitation of XSS, SQLi, CSRF, broken authentication, and incomplete sanitization.</p>
-        <a class="btn" href="projects.html">View Report</a>
+<!-- PAGE CONTENT -->
+<div class="content-wrap">
+  <main class="hero" role="main" aria-labelledby="intro-title">
+    <div class="hero-inner">
+      <div class="profile" aria-hidden="true">
+        <!-- Replace this src with your real photo path -->
+        <img src="images/me_photo1.png" alt="headshot">
+      </div>
+
+      <!-- Your name appears only here -->
+      <h1 id="intro-title" class="title">Jared Korwatch</h1>
+
+      <p class="lead">
+        Hello, I am a passionate fourth-year Cybersecurity student possessing a strong interest in innovating in various fields, 
+        including threat mitigation and game development. I am best known for my strong work ethic, constantly challenging myself 
+        to produce perfection in the projects I take on.
+      </p>
+
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="projects.html">View Projects</a>
+        <a class="btn btn-ghost" href="blog.html">Read Write-ups</a>
+      </div>
     </div>
+  </main>
 
-</section>
+  <!-- ---------------- PROJECTS SECTION ---------------- -->
+  <section class="projects" aria-labelledby="projects-title">
+    <div class="projects-inner">
+      <h2 id="projects-title" class="title" style="font-size:2rem;">Featured Project</h2>
+      
+      <div class="project-card">
+        <img src="images/project1.png" alt="Ultimate Chicken Horse Project Screenshot">
+        <div class="project-info">
+          <h3>Ultimate Chicken Horse – Roblox Game</h3>
+          <p>
+            Custom round-based multiplayer game with advanced movement mechanics, interactive items, 
+            and a placement/score system inspired by "Ultimate Chicken Horse". Focus on clean code, 
+            physics, and player experience.
+          </p>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+      
+      <a href="projects.html" class="btn btn-primary" style="margin-top:20px;">View All Projects</a>
+    </div>
+  </section>
 
-<footer>
-    © 2025 Your Name — Cybersecurity Portfolio
-</footer>
+  <!-- ---------------- BLOG SECTION ---------------- -->
+  <section class="blog" aria-labelledby="blog-title">
+    <div class="blog-inner">
+      <h2 id="blog-title" class="title" style="font-size:2rem;">Latest Blog Post</h2>
+      
+      <div class="blog-card">
+        <h3>Penetration Testing “Arm Book” Web App</h3>
+        <p>
+          Step-by-step walkthrough of discovering XSS, CSRF, and SQL injection vulnerabilities in a 
+          vulnerable web application. Includes screenshots, code snippets, and responsible disclosure notes.
+        </p>
+        <a href="blog.html" class="btn btn-ghost">Read Full Write-up</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer / contact (always visible on page bottom) -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="profile-small" aria-hidden="true">
+      <img src="images/me_photo1.png" alt="headshot">
+    </div>
+    <h2>Jared Korwatch</h2>
+    <p><strong>Email:</strong> <a href="mailto:jmk9339@rit.edu">jmk9339@rit.edu</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/stillersight" target="_blank" rel="noopener">github.com/stillersight</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jared-korwatch" target="_blank" rel="noopener">linkedin.com/in/jared-korwatch</a></p>
+  </footer>
+</div>
 
 </body>
 </html>

@@ -1,54 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Projects | Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Projects — Cybersecurity Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Projects</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a class="active" href="projects.html">Projects</a>
-        <a href="writeups.html">Write-Ups</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<section>
-    <h2>Automated HIPAA Risk Analysis Tool</h2>
-    <div class="card">
-        <p>
-            A Python-based tool that scans healthcare systems, enumerates risks,
-            categorizes vulnerabilities, and outputs a formatted compliance-ready report.
-            Includes device profiling, encryption analysis, and network exposure scoring.
-        </p>
+<!-- NAV -->
+<nav role="navigation" aria-label="Main">
+  <div class="nav-inner">
+    <div class="nav-links" role="menubar" aria-label="Top Navigation">
+      <a href="index.html" role="menuitem">Home</a>
+      <a href="projects.html" class="active" role="menuitem">Projects</a>
+      <a href="blog.html" role="menuitem">Blog</a>
+      <a href="#footer" role="menuitem">Contact</a>
     </div>
+  </div>
+</nav>
 
-    <h2>Pentesting Report: ArmBook</h2>
-    <div class="card">
-        <p>
-            Full penetration test of a mock social platform. Discovered:
-            SQL injection, XSS, weak session management, CSRF, broken access control,
-            and predictable password reset tokens.
-        </p>
+<!-- PAGE CONTENT -->
+<div class="content-wrap">
+
+  <!-- HERO / PAGE TITLE -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="title">My Projects</h1>
+      <p class="lead">
+        A selection of cybersecurity and software projects I have worked on, ranging from web security 
+        write-ups to game development. Click on any project to see details.
+      </p>
     </div>
+  </section>
 
-    <h2>Roblox Security Engineering</h2>
-    <div class="card">
-        <p>
-            Implemented secure client–server communication in a custom engine.
-            Prevented remote event abuse, added packet validation, and sandboxed module interactions.
-        </p>
+  <!-- PROJECT LIST -->
+  <section class="projects" aria-labelledby="projects-list-title">
+    <div class="projects-inner">
+      <h2 id="projects-list-title" class="title" style="font-size:2rem;">All Projects</h2>
+
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="images/project1.png" alt="Ultimate Chicken Horse Project Screenshot">
+        <div class="project-info">
+          <h3>Ultimate Chicken Horse – Roblox Game</h3>
+          <p>
+            Custom round-based multiplayer game with advanced movement mechanics, interactive items, 
+            and a placement/score system inspired by "Ultimate Chicken Horse". Focus on clean code, 
+            physics, and player experience.
+          </p>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="images/project2.png" alt="Arm Book Penetration Testing">
+        <div class="project-info">
+          <h3>Arm Book – Web Application Penetration Test</h3>
+          <p>
+            Conducted full penetration testing on a vulnerable web application. Found and documented 
+            XSS, CSRF, and SQL injection vulnerabilities with responsible disclosure. 
+          </p>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <img src="images/project3.png" alt="Custom Roblox Emote System">
+        <div class="project-info">
+          <h3>Custom Emote System – Roblox</h3>
+          <p>
+            Developed a modular emote system for Roblox games supporting UI selection, 
+            previews, controller/keyboard input, and mobile-friendly design.
+          </p>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+
+      <a href="index.html" class="btn btn-primary" style="margin-top:20px;">Back to Home</a>
     </div>
-</section>
+  </section>
 
-<footer>
-    © 2025 Your Name
-</footer>
+  <!-- Footer / contact (always visible on page bottom) -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="profile-small" aria-hidden="true">
+      <img src="images/me_photo1.png" alt="headshot">
+    </div>
+    <h2>Jared Korwatch</h2>
+    <p><strong>Email:</strong> <a href="mailto:jmk9339@rit.edu">jmk9339@rit.edu</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/stillersight" target="_blank" rel="noopener">github.com/stillersight</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jared-korwatch" target="_blank" rel="noopener">linkedin.com/in/jared-korwatch</a></p>
+  </footer>
 
+</div>
 </body>
 </html>
