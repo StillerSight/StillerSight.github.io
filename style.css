@@ -15,7 +15,7 @@ html,body { height: 100%; scroll-behavior: smooth; }
 /* Body */
 body{
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color: #000000;
+  color: #e9eef3;
   background: linear-gradient(180deg,var(--bg-1),var(--bg-2));
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -232,7 +232,7 @@ p.lead{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 64px; 
   align-items: center;
 }
 
@@ -243,10 +243,26 @@ p.lead{
   backdrop-filter: blur(8px) saturate(120%);
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 12px;
-  padding: 24px;
-  gap: 24px;
+  padding: 32px;
+  gap: 32px;
   width: 100%;
   position: relative;
+}
+
+/* Add a hover effect to match your blog cards */
+a.project-card.clickable {
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+a.project-card.clickable:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-1);
+}
+
+a.project-card.clickable:hover .project-arrow {
+  color: #fff;
+  transform: translateY(-50%) translateX(5px);
 }
 
 .project-card img {
@@ -271,14 +287,27 @@ p.lead{
   line-height: 1.5;
 }
 
-/* arrow in middle y-axis */
+/* Make the arrow link look like a button */
 .project-arrow {
+  text-decoration: none;
   font-size: 2rem;
   color: var(--accent-2);
   position: absolute;
-  right: 16px;
+  right: 24px;
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.2s ease;
+  padding: 10px;
+}
+
+.project-arrow:hover {
+  color: #fff;
+  transform: translateY(-50%) translateX(5px); /* Moves slightly right on hover */
+}
+
+/* Ensure info doesn't overlap the arrow */
+.project-info {
+  margin-right: 40px; 
 }
 
 /* ---------------- BLOG SECTION ---------------- */
