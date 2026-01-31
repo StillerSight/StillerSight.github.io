@@ -2,10 +2,13 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 /* html,body { height: 100%; scroll-behavior: smooth; } */
 
-html, body {
-  min-height: 100%;
-  scroll-behavior: smooth;
-  background-color: #0b0e12; /* same as your --bg-1 */
+html {
+  background-color: #0b0e12; /* fallback black behind everything */
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
 }
 
 /* ---------------- THEME ---------------- */
