@@ -9,6 +9,8 @@ html {
 body {
   min-height: 100vh;
   background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
+  overscroll-behavior: none; 
+  background-color: #0b0e12;
 }
 
 /* ---------------- THEME ---------------- */
